@@ -1,7 +1,8 @@
+import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 
-const EmployeeCard = ({ employee }) => {
-  const { id, employee_name, employee_salary, employee_age, profile_image } =
+const EmployeeCard = ({ employee, onButtonClick }) => {
+  const { employee_name, employee_salary, employee_age, profile_image } =
     employee;
 
   return (
@@ -12,6 +13,12 @@ const EmployeeCard = ({ employee }) => {
         <Card.Text>
           age: {employee_age} <br /> yearly salary: {employee_salary}
         </Card.Text>
+        <Button
+          className="buttonToCart"
+          onClick={() => onButtonClick(employee)}
+        >
+          add employee
+        </Button>
       </Card.Body>
     </Card>
   );
