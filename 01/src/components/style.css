@@ -1,0 +1,50 @@
+.titlePage {
+  text-align: center;
+  padding: 2rem;
+  background-color: #ebf4fa;
+}
+
+.formContainer {
+  background-color: #ebf4fa;
+  padding: 5rem;
+  text-align: center;
+}
+
+.formStyle {
+  display: grid;
+  grid-template-columns: 1fr; 
+  width: 60%;
+}
+
+.employeeList {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+  padding: 2rem;
+  text-align: center;
+  justify-items: center;
+  background-color: #ebf4fa;
+}
+.employeeListTag {
+  text-align: center;
+  padding-top: 2rem;
+  background-color: #ebf4fa;
+}
+
+@media screen and (max-width: 1280px) {
+  .employeeList {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .employeeList {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .employeeList {
+    grid-template-columns: 1fr;
+  }
+}
